@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    height: 100px;
+    background-color: rgb(3, 31, 2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 40%;
+    color: rgb(140, 140, 188);
+    padding-left: 55px;
+}
+
+.menu {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.menu a {
+    color: azure;
+}
+
+.homediv img {
+    width: 100%;
+}
+
+.productdiv {
+    display: flex;
+    justify-content: space-around;
+    color: #000;
+}
+
+.productdiv .colddrinkCard {
+    height: 200px;
+    width: 300px;
+    background-image: url('images/coldrinksBanner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.colddrinks {
+    padding: 109px 0px 8px 91px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.productdiv .ChoclatesCard {
+    height: 200px;
+    width: 300px;
+    background-image: url('images/choco.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Choclates {
+    color: aliceblue;
+    padding: 109px 0px 8px 91px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.productdiv .laysCard {
+    height: 200px;
+    width: 300px;
+    background-image: url('images/lays.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lays {
+    padding: 106px 13px 14px 135px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 249, 249);
+}
+
+.coldrinkContainer {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 0 30px;
+}
+
+.cokeimg {
+    display: flex;
+    padding: 20px;
+    height: 300px;
+    border: 1px solid blue;
+    flex: 1;
+    border-radius: 40px;
+    flex-direction: column;
+}
+
+.cokeimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.cokeimg p {
+    font-size: 20px;
+}
+
+.ChocolatesContainer {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 0 30px;
+}
+
+.chocoimg {
+    display: flex;
+    padding: 20px;
+    height: 300px;
+    border: 1px solid blue;
+    flex: 1;
+    border-radius: 40px;
+    flex-direction: column;
+}
+
+.chocoimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.chocoimg p {
+    font-size: 20px;
+}
+
+.LaysContainer {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 0 30px;
+}
+
+.laysimg {
+    display: flex;
+    padding: 20px;
+    height: 300px;
+    border: 1px solid blue;
+    flex: 1;
+    border-radius: 40px;
+    flex-direction: column;
+}
+
+.laysimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.laysimg p {
+    font-size: 20px;
+}
+
+.about {
+    padding: 10px;
+    margin-top: 50px;
+    background: rgb(3, 31, 2);
+    color: rgb(218, 204, 204);
+}
+
+.form {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.formcontainer {
+    background-color: rgb(3, 31, 2);
+    padding: 50px;
+}
+
+.inp input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+
+.inp textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+
+.button {
+    text-align: center;
+    width: 10px;
+}
+
+.Contactheading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: beige;
+}
