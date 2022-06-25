@@ -9,9 +9,9 @@ html {
 
 nav {
     height: 100px;
-    background-color: rgb(3, 31, 2);
+    background-color: #ab610c;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Roboto', sans-serif;
 }
@@ -26,6 +26,10 @@ a {
     padding-left: 55px;
 }
 
+.logo img {
+    width: 140px;
+}
+
 .menu {
     width: 60%;
     display: flex;
@@ -36,6 +40,29 @@ a {
 
 .menu a {
     color: azure;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.menu a:hover {
+    color: yellow;
+}
+
+.mobile_menu {
+    position: absolute;
+    background-color: #ab610c;
+    width: 100%;
+    display: none;
+}
+
+.mobile_menu a {
+    text-align: center;
+    color: azure;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px;
+    display: block;
 }
 
 .homediv img {
@@ -51,13 +78,16 @@ a {
 .productdiv .colddrinkCard {
     height: 200px;
     width: 300px;
-    background-image: url('images/coldrinksBanner.jpg');
+    background-image: url('images/coke.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .colddrinks {
-    padding: 109px 0px 8px 91px;
+    /* padding: 109px 0px 8px 91px; */
     font-family: 'Roboto', sans-serif;
     color: white;
 }
@@ -68,12 +98,17 @@ a {
     background-image: url('images/choco.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Choclates {
     color: aliceblue;
-    padding: 109px 0px 8px 91px;
+    /* padding: 109px 0px 8px 91px; */
     font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;
 }
 
 .productdiv .laysCard {
@@ -82,10 +117,13 @@ a {
     background-image: url('images/lays.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .lays {
-    padding: 106px 13px 14px 135px;
+    /* padding: 106px 13px 14px 135px; */
     font-family: 'Roboto', sans-serif;
     color: rgb(255, 249, 249);
 }
@@ -171,7 +209,7 @@ a {
 .about {
     padding: 10px;
     margin-top: 50px;
-    background: rgb(3, 31, 2);
+    background: #ab610c;
     color: rgb(218, 204, 204);
 }
 
@@ -184,7 +222,7 @@ a {
 }
 
 .formcontainer {
-    background-color: rgb(3, 31, 2);
+    background-color: #ab610c;
     padding: 50px;
 }
 
@@ -209,4 +247,48 @@ a {
     text-align: center;
     margin-bottom: 20px;
     color: beige;
+}
+
+.menuicon {
+    display: none;
+    margin-right: 15px;
+}
+
+@media (max-width: 720px) {
+    .menu {
+        display: none;
+    }
+    .menuicon {
+        display: block;
+    }
+    .mobile_menu {
+        display: none;
+    }
+    .productdiv {
+        flex-direction: column;
+    }
+    .productdiv .colddrinkCard {
+        width: 100%;
+        margin-top: 5px;
+    }
+    .productdiv .ChoclatesCard {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .productdiv .laysCard {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .coldrinkContainer {
+        flex-direction: column;
+    }
+    .ChocolatesContainer {
+        flex-direction: column;
+    }
+    .LaysContainer {
+        flex-direction: column;
+    }
+    .productdiv .colddrinkCard {
+        height: 300px;
+    }
 }
